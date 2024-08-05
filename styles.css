@@ -1,7 +1,10 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -12,6 +15,10 @@ body {
 .footer {
   background-color: #1f2937;
   color: white;
+}
+
+.header {
+  padding: 0 10%;
 }
 
 a {
@@ -25,8 +32,9 @@ a {
 .top {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 0;
 }
+
 span {
   font-size: 24px;
   color: #f9faf8;
@@ -36,22 +44,37 @@ span {
 .hero {
   display: flex;
   border: 2px solid pink;
-  justify-content: ;
+  align-items: center;
+  height: 400px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.herotext {
+  height: 50%;
+  flex: 1;
 }
 
 .heroheader {
   font-size: 48px;
   font-weight: 800;
   color: #f9faf8;
+  align-self: flex-start;
+  margin-bottom: 10px;
 }
 
 .hero .para {
   font-size: 18px;
   color: #e5e7eb;
+  margin-bottom: 10px;
 }
 
 .placeholder {
+  background-color: grey;
   border: 2px solid red;
+  flex: 1;
+  height: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
